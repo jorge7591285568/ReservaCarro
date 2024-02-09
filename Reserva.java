@@ -1,44 +1,56 @@
-package br.edu.ifba.saj.fwads.model;
+
 public class Reserva {
     private String modelo;
     private String marca;
-    private Int passageiro;
-   privatyer Int ano;
-    public Reserva(String modelo, String marca, Int passageiro, Int ano) {
+    private int passageiro;
+    private int ano;
+
+    public Reserva(String modelo, String marca, int passageiro, int ano) {
         this.modelo = modelo;
-        this. Marca = marca;
+        this.marca = marca;
         this.passageiro = passageiro;
-         this.ano = ano;
+        this.ano = ano;
     }
+
     public String getModelo() {
         return modelo;
     }
+
     public void setModelo(String modelo) {
         this.modelo = modelo;
     }
+
     public String getMarca() {
         return marca;
     }
+
     public void setMarca(String marca) {
         this.marca = marca;
     }
-    public Int getPassageiro() {
+
+    public int getPassageiro() {
         return passageiro;
     }
-    public void setPassageiro(Int Passageiro) {
+
+    public void setPassageiro(int Passageiro) {
         this.passageiro = passageiro;
     }
-    public Int getAno() {
+
+    public int getAno() {
         return ano;
     }
-    public void setAno(Int Ano) {
+
+    public void setAno(int Ano) {
         this.ano = ano;
     }
+
     @Override
     public String toString() {
         return "Carro [modelo=" + modelo + ", marca=" + marca + ", passageiro=" + passageiro + ", ano=" + ano + "]";
     }
+
 }
+
     @Override
     public int hashCode() {
         final int prime = 31;
@@ -49,6 +61,7 @@ public class Reserva {
         result = prime * result + ((ano == null) ? 0 : ano.hashCode());
         return result;
     }
+
     @Override
     public boolean equals(Object obj) {
         if (this == obj)
@@ -74,5 +87,4 @@ public class Reserva {
         } else if (!ano.equals(other.ano))
             return false;
         return true;
-    }    
-
+    }

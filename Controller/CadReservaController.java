@@ -1,12 +1,5 @@
 package br.edu.ifba.saj.fwads.controller;
 
-import br.edu.ifba.saj.fwads.Biblioteca;
-import br.edu.ifba.saj.fwads.model.Autor;
-import javafx.event.ActionEvent;
-import javafx.fxml.FXML;
-import javafx.scene.control.Alert;
-import javafx.scene.control.TextField;
-import javafx.scene.control.Alert.AlertType;
 
 public class CadReservaController {
 
@@ -32,9 +25,10 @@ public class CadReservaController {
     }
     @FXML
     private void limparTela() {
-        txNome.setText("");
-        txEmail.setText("");
-        txCPF.setText("");
+        txModelo.setText("");
+        txMarca.setText("");
+        txPassageiro.setText("");
+        txAno.setText("");
     }
 
 }
