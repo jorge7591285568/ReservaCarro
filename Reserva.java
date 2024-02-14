@@ -1,53 +1,67 @@
-
 public class Reserva {
-    private String modelo;
-    private String marca;
-    private int passageiro;
-    private int ano;
+    private Cliente cliente;
+    private Carro carro;
+    private LocalDate dataInicio;
+    private LocalDate dataFim;
+    private double valorTotal;
 
-    public Reserva(String modelo, String marca, int passageiro, int ano) {
-        this.modelo = modelo;
-        this.marca = marca;
-        this.passageiro = passageiro;
-        this.ano = ano;
+    
+
+    public Reserva(Cliente cliente, Carro carro, LocalDate dataInicio, LocalDate dataFim, double valorTotal) {
+        this.cliente = cliente;
+        this.carro = carro;
+        dataInicio = dataInicio;
+        dataFim = dataFim;
+        this.valorTotal = valorTotal;
+    }
+    
+    public Cliente getCliente() {
+        return cliente;
     }
 
-    public String getModelo() {
-        return modelo;
+    public void setCliente(Cliente cliente) {
+        this.cliente = cliente;
     }
 
-    public void setModelo(String modelo) {
-        this.modelo = modelo;
+    public Carro getCarro() {
+        return carro;
     }
 
-    public String getMarca() {
-        return marca;
+    public void setCarro(Carro carro) {
+        this.carro = carro;
     }
 
-    public void setMarca(String marca) {
-        this.marca = marca;
+    public LocalDate getDataInicio() {
+        return dataInicio;
     }
 
-    public int getPassageiro() {
-        return passageiro;
+    public void setDataInicio(LocalDate dataInicio) {
+        dataInicio = dataInicio;
     }
 
-    public void setPassageiro(int Passageiro) {
-        this.passageiro = passageiro;
+    public LocalDate getDataFim() {
+        return dataFim;
     }
 
-    public int getAno() {
-        return ano;
+    public void setDataFim(LocalDate dataFim) {
+        dataFim = dataFim;
     }
 
-    public void setAno(int Ano) {
-        this.ano = ano;
+    public double getValorTotal() {
+        return valorTotal;
     }
+
+    public void setValorTotal(double valorTotal) {
+        this.valorTotal = valorTotal;
+    }
+
 
     @Override
     public String toString() {
-        return "Carro [modelo=" + modelo + ", marca=" + marca + ", passageiro=" + passageiro + ", ano=" + ano + "]";
+        return "Reserva [cliente=" + cliente + ", carro=" + carro + ", dataInicio=" + dataInicio + ", dataFim="
+                + dataFim + ", valorTotal=" + valorTotal + "]";
     }
+
 
 }
 
